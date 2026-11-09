@@ -59,6 +59,35 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "bituin-play-casino-demo",
+    title: "Bituin Play — Casino Lobby Demo",
+    tagline: "A casino game lobby, wallet, deposit flow and playable themed slots.",
+    kind: "Personal",
+    year: "2026",
+    role: "Design and development",
+    stack: ["Next.js", "React", "TypeScript", "React Query", "Tailwind CSS"],
+    accent: "#fbbf24",
+    pattern: "reels",
+    summary:
+      "An original, public rebuild of the kind of casino platform I work on professionally: a game lobby, a live wallet, a deposit flow with promo codes, and 12 playable demo slots. Made-up brand, games and studios; no real money.",
+    problem:
+      "My professional casino work is proprietary, so I can't show it. I wanted a demo anyone can open that shows the same skills: data fetching and caching, complex forms, and game UI tied to a wallet.",
+    built: [
+      "Game lobby with category tabs, debounced search, provider filter and favorites, plus loading, empty and error states.",
+      "React Query for caching and mutations: deposits and spins write the new wallet straight into the cache.",
+      "Deposit modal with payment methods, amount presets, validation and promo codes with a live bonus preview.",
+      "12 playable slots sharing one set of game rules, each with its own SVG symbol set and colors.",
+      "A mock API in the browser, so the front end is built exactly as it would be against a real backend.",
+      "Responsive layout with a bottom-sheet modal on phones; keyboard and screen-reader friendly.",
+    ],
+    challenge:
+      "Keeping the wallet consistent across the header, deposit and slot while every action is asynchronous. The API decides each result and returns the new wallet, and the UI only displays it.",
+    links: [
+      { label: "Live demo", href: "https://bituin-play-demo.vercel.app" },
+      { label: "Source on GitHub", href: "https://github.com/wagkangmalikot/casino-lobby-demo" },
+    ],
+  },
+  {
     slug: "lords-of-the-fallen-tracker",
     title: "Lords of the Fallen Trophy Tracker",
     tagline: "An interactive checklist for a PS5 platinum run, synced across devices.",
