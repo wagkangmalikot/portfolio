@@ -59,8 +59,8 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    slug: "bituin-play-casino-demo",
-    title: "Bituin Play — Casino Lobby Demo",
+    slug: "astraspin-casino-demo",
+    title: "AstraSpin — Casino Lobby Demo",
     tagline: "A casino lobby with a wallet, deposits and a featured 5-reel slot built in Phaser.",
     kind: "Personal",
     year: "2026",
@@ -76,7 +76,7 @@ export const projects: Project[] = [
       "Game lobby with category tabs, debounced search, provider filter and favorites, plus loading, empty and error states.",
       "React Query for caching and mutations: deposits and spins write the new wallet straight into the cache.",
       "Deposit modal with payment methods, amount presets, validation and promo codes with a live bonus preview.",
-      "Carabao Gold Deluxe: a 5-reel, 10-line Phaser slot with a gold cabinet, chasing marquee lights, A-K-Q-J and picture symbols, Wilds, glowing win lines, a win counter, Turbo and Auto-spin. All art is drawn in code with the Canvas 2D API.",
+      "Golden Ox Deluxe: a 5-reel, 10-line Phaser slot with a gold cabinet, chasing marquee lights, A-K-Q-J and picture symbols, Wilds, glowing win lines, a win counter, Turbo and Auto-spin. All art is drawn in code with the Canvas 2D API.",
       "Slot rules written as pure TypeScript and tuned to about 95.8% RTP, checked by a script that plays a million spins.",
       "Original casino-style studios and game titles, with RTP, volatility and max win for every game.",
       "11 more slots sharing one set of rules, each with its own SVG symbol set and colors.",
@@ -86,7 +86,7 @@ export const projects: Project[] = [
     challenge:
       "Keeping the wallet consistent across the header, deposit and slot while every action is asynchronous. The API decides each result and returns the new wallet, and the UI only displays it.",
     links: [
-      { label: "Live demo", href: "https://bituin-play-demo.vercel.app" },
+      { label: "Live demo", href: "https://astraspin-demo.vercel.app" },
       { label: "Source on GitHub", href: "https://github.com/wagkangmalikot/casino-lobby-demo" },
     ],
   },
