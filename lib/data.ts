@@ -91,6 +91,36 @@ export const projects: Project[] = [
     ],
   },
   {
+    slug: "astraspin-back-office",
+    title: "AstraSpin Back Office — Admin Dashboard",
+    tagline: "The staff side of the casino demo: players, withdrawals, games and promo codes, with role-based access.",
+    kind: "Personal",
+    year: "2026",
+    role: "Design and development",
+    stack: ["Vue.js", "TypeScript", "Pinia", "PHP", "SQLite", "Tailwind CSS"],
+    accent: "#818cf8",
+    pattern: "bars",
+    summary:
+      "An admin dashboard for the AstraSpin demo, with a Vue 3 front end and a PHP 8 REST API I wrote without a framework. Staff sign in as Admin, Support or Viewer, and each role only gets what it's allowed to do.",
+    problem:
+      "My CMS work at GlobalNet is proprietary. I wanted a public project that shows the same back-office skills: data tables, permissions, money-safe updates and an audit trail.",
+    built: [
+      "Role-based access: every API route declares the permission it needs and the server checks it on each request; the Vue app uses the same list to hide what a role can't use.",
+      "Dashboard with deposits, withdrawals, revenue and player KPIs, a 30-day SVG chart and recent staff activity, all calculated in SQL.",
+      "Players table with server-side search, filters, sorting and paging, with filters kept in the URL.",
+      "Balance adjustments with a per-role limit, written together with the ledger entry and audit record in one database transaction.",
+      "Withdrawal review (approve or reject) that can't be processed twice, plus game on/off switches and promo code management with full validation.",
+      "Signed tokens instead of PHP sessions, so the API works on serverless hosting.",
+      "Audit log of every change, with who made it and why.",
+    ],
+    challenge:
+      "Making permissions trustworthy. Hiding a button isn't security, so the PHP API checks the role on every request, and rules that depend on data, like adjustment limits, live in the handlers.",
+    links: [
+      { label: "Live demo", href: "https://astraspin-admin.vercel.app" },
+      { label: "Source on GitHub", href: "https://github.com/wagkangmalikot/astraspin-admin" },
+    ],
+  },
+  {
     slug: "lords-of-the-fallen-tracker",
     title: "Lords of the Fallen Trophy Tracker",
     tagline: "An interactive checklist for a PS5 platinum run, synced across devices.",
