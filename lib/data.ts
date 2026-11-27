@@ -188,26 +188,6 @@ export const projects: Project[] = [
       "Keeping animations smooth on low-end phones while still delivering the visual polish players expect.",
     note: "Studio-owned games: available to demo on request.",
   },
-  {
-    slug: "wifi-qr-manager",
-    title: "Guest WiFi QR Manager",
-    tagline: "A small web app that turns home router guest WiFi into scannable QR codes.",
-    kind: "Personal",
-    year: "2026",
-    role: "Design and development",
-    stack: ["JavaScript", "HTML", "CSS"],
-    accent: "#60a5fa",
-    pattern: "qr",
-    summary:
-      "A tool for managing guest WiFi on a PLDT home router and sharing it as a QR code, so visitors can join without typing a password.",
-    problem:
-      "Reading out a long WiFi password to every guest is slow and error-prone, and changing it means telling everyone again.",
-    built: [
-      "Generates a standard WiFi QR code that phones can scan to join.",
-      "Manages the guest network details for a PLDT home router.",
-    ],
-    challenge: "Making a practical tool that non-technical family members can use without help.",
-  },
 ];
 
 export const experience = [
