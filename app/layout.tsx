@@ -22,6 +22,7 @@ const interDisplay = localFont({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://alfie-deligero.vercel.app"),
   title: {
     default: `${profile.name} — ${profile.role}`,
     template: `%s — ${profile.shortName}`,
@@ -30,8 +31,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: `${profile.name} — ${profile.role}`,
     description: profile.headline,
+    url: "/",
+    siteName: profile.shortName,
     type: "website",
+    images: [{ url: "/og.jpg", width: 1200, height: 630, alt: `${profile.name} — ${profile.role}` }],
   },
+  twitter: { card: "summary_large_image", title: `${profile.name} — ${profile.role}`, description: profile.headline, images: ["/og.jpg"] },
 };
 
 export const viewport: Viewport = {
